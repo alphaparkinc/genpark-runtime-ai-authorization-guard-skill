@@ -1,0 +1,31 @@
+{
+  "name": "genpark-runtime-ai-authorization-guard-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Fine-grained security proxy granting runtime permissions to AI coding agents.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "security",
+    "runtime-auth",
+    "permissions",
+    "guardrails"
+  ],
+  "inputs": {
+    "requested_command": {
+      "type": "string"
+    },
+    "target_path": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "is_authorized": {
+      "type": "boolean"
+    },
+    "security_decision": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
